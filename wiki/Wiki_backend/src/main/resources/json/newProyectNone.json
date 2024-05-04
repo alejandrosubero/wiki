@@ -1,6 +1,11 @@
 {
   "name": "proyect test 1",
-  "repositoryLink": "",
+  "repositoryLink": [
+    {
+      "name":"",
+      "repositoryLink":""
+    }
+  ],
   "description": "json of proyect for test",
   "startDate": "",
   "time": 0,

@@ -17,13 +17,12 @@ import java.util.List;
 @Entity
 public class Project {
 
- @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   @Column(name = "id_project")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_project")
     private Long idProject;
 
     private String name;
-    private String repositoryLink;
     private String description;
     private Date startDate;
     private Long time; // horas
@@ -35,5 +34,9 @@ public class Project {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "project_id_task")
     private @Builder.Default List<Task> taskList = new ArrayList<>();
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "repository_Link_id")
+    private @Builder.Default List<RepositoryLink> repositoryLink = new ArrayList<>();
 
 }
