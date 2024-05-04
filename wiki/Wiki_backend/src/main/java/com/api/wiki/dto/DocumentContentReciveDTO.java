@@ -13,8 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DocumentContentRecive implements Serializable {
-    
-  private  List<DocumentDTOModel> documents = new ArrayList<>();
-
+public class DocumentContentReciveDTO implements Serializable {
+  private @Builder.Default List<ClassDocumentDTO> documents = new ArrayList<>();
 }

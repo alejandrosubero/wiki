@@ -93,22 +93,25 @@
             align-items: center;
         }
 
-
+        .campos-label {
+            margin: 0px 0px 10px 0px;
+        }
       
         .campos {
             display: flex;
             flex-direction: column;
             width: 100%;
+            padding: 10px;
+            /* border: black solid 1px; */
         }
 
         .campo {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 5px;
+            /* border: red solid 1px; */
         }
 
         .campo label {
-            width: 20%;
-            text-align: right;
             padding-right: 10px;
         }
 
@@ -206,6 +209,7 @@
             </div>
             <div class="buttons">
                 <button class="button button-cancel">x</button>
+                <button class="button button-add-version">+</button>
                 <button class="button button-add">+</button>
             </div>
         </div>
@@ -214,15 +218,17 @@
             <div class="campo">
                 <label for="version">Versión:</label>
                 <input type="text" id="version" name="version" required>
-            </div>
-
-            <div class="campo">
-                <label for="description">Description:</label>
-                <input type="text" id="description" name="description" required>
-            </div>
-
+            </div>   
         </div>
 
+        <div class="campos">
+            <div class="campos-label">
+                <label for="descripcion">Description:</label>
+            </div>
+            <div class="campo">
+                <textarea placeholder="Description" id="descripcion" name="descripcion"></textarea>
+            </div>
+        </div>
        
 
         <div class="navBar">
@@ -241,19 +247,22 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Versión</th>
+                    <th>Versión Actual</th>
+                    <th>Versión Inicial</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
                     <td>Documento 1</td>
+                    <td>1.1</td>
                     <td>1.0</td>
                 </tr>
 
                 <tr>
                     <td>2</td>
                     <td>Documento 2</td>
+                    <td>2.1</td>
                     <td>2.0</td>
                 </tr>
 
@@ -261,6 +270,7 @@
                     <td>3</td>
                     <td>Documento 3</td>
                     <td>3.0</td>
+                    <td>2.0</td>
                 </tr>
             </tbody>
         </table>

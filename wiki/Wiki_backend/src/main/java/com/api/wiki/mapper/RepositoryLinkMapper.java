@@ -1,13 +1,15 @@
-package com.api.wiki.service.implment;
+package com.api.wiki.mapper;
 
 import com.api.wiki.dto.RepositoryLinkDTO;
 import com.api.wiki.entitys.RepositoryLink;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Component
 public class RepositoryLinkMapper {
 
     public RepositoryLink dtoToEntity(RepositoryLinkDTO dto) {

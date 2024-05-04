@@ -37,7 +37,7 @@ public class ProjectDTO implements Serializable {
 
     private Date startDate;
     private Long time;
-    private @Builder.Default List<RepositoryLink> repositoryLink = new ArrayList<>();
+    private @Builder.Default List<RepositoryLinkDTO> repositoryLink = new ArrayList<>();
     private @Builder.Default List<VersionControlDTO> versionControlList = new ArrayList<>();
     private @Builder.Default List<TaskDTO> taskList = new ArrayList<>();
 }

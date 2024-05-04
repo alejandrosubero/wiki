@@ -28,9 +28,6 @@ public class SubTaskDTO implements Serializable {
     private Date createDate;
     private Date endDate;
 
-    private @Builder.Default List<TaskNoteDTO> taskNote = new ArrayList<>();
-    private @Builder.Default List<PaquetePackageDTO> packages = new ArrayList<>();
-
     @NotNull(message = "titleTask cannot be null")
     @NotBlank(message = "titleTask cannot be blank")
     private String titleSubTask;
@@ -51,4 +48,7 @@ public class SubTaskDTO implements Serializable {
     @NotBlank(message = "titleTask cannot be blank")
     private String personWorked;
 
+    private @Builder.Default List<TaskNoteDTO> taskNote = new ArrayList<>();
+    private @Builder.Default List<PaquetePackageDTO> packages = new ArrayList<>();
+    private @Builder.Default List<ClassDocumentDTO> classDocumentsList = new ArrayList<>();
 }

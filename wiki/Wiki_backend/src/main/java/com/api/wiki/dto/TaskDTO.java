@@ -24,10 +24,6 @@ public class TaskDTO implements Serializable {
     private Date createDate;
     private Date endDate;
 
-    private @Builder.Default List<TaskNoteDTO> taskNote = new ArrayList<>();
-    private @Builder.Default List<SubTaskDTO> subTasks = new ArrayList<>();
-    private @Builder.Default List<PaquetePackageDTO> packages = new ArrayList<>();
-
     @NotNull(message = "titleTask cannot be null")
     @NotBlank(message = "titleTask cannot be blank")
     private String titleTask;
@@ -50,5 +46,10 @@ public class TaskDTO implements Serializable {
 
     @NotNull(message = "Description cannot be null")
     private Long idProject;
+
+    private @Builder.Default List<TaskNoteDTO> taskNote = new ArrayList<>();
+    private @Builder.Default List<SubTaskDTO> subTasks = new ArrayList<>();
+    private @Builder.Default List<PaquetePackageDTO> packages = new ArrayList<>();
+    private @Builder.Default List<ClassDocumentDTO> classDocumentsList = new ArrayList<>();
 
 }

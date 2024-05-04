@@ -17,7 +17,6 @@ import java.util.Date;
 @Builder
 @Entity
 public class Document {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idDocument;
@@ -28,4 +27,5 @@ public class Document {
     private String referentVersion;
     private String actualVersion;
     private Boolean active;
+    private Boolean deprecate;
 }

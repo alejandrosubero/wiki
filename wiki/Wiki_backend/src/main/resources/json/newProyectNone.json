@@ -1,14 +1,9 @@
 {
   "name": "proyect test 1",
-  "repositoryLink": [
-    {
-      "name":"",
-      "repositoryLink":""
-    }
-  ],
   "description": "json of proyect for test",
   "startDate": "",
   "time": 0,
+  "repositoryLink": [],
   "versionControlList": [],
   "taskList": []
 }

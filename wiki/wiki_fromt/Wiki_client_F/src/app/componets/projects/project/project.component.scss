@@ -1,0 +1,256 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(225deg, #9e9c9c, hwb(0 98% 2%));
+    // box-shadow: -9px 9px 16px #b3b3b3, 9px -9px 16px #ffffff;
+    color: black;
+}
+
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.natablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 25px 0px 25px 0px;
+    width: 100%;
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+
+}
+
+.title-head {
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.title h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.button-agregar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-add {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.button-cancel {
+    background-color: rgb(236, 14, 14);
+    color: #fff;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.button-add:hover {
+    background-color: #042f5e;
+}
+
+.button-cancel:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons_m {
+margin-left: 10px;
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 40px 25px 25px 25px;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 20px 0px 20px;
+}
+
+.campos-label {
+    margin: 0px 0px 10px 0px;
+}
+
+.campos-Container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+
+.camp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.campo input,
+.campo textarea {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilos flotantes */
+.contenedor,
+.campo input,
+.campo textarea {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.campo p {
+    width: 20%;
+    text-align: start;
+}
+
+.box3d {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.head h1 {
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button-add-version {
+    background-color: #05c722;
+    color: #fff;
+    cursor: pointer;
+    /* transition: background-color 0.3s ease; */
+}
+
+.button-add-version:hover {
+    background-color: #77e83a;
+}
+
+/* Tabla */
+
+.tabla-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 20px 20px 20px;
+    box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    /* Elimina los bordes entre las celdas */
+}
+
+.tabla th,
+.tabla td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.tabla th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.custom-select {
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    overflow-y: auto;
+    max-height: 50px;
+    /* padding: 10px; */
+    /* // border: 1px solid #ccc; */
+    /* Habilita el scroll vertical */
+    /* Establece la altura máxima antes de mostrar el scroll */
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .tabla {
+        flex-direction: column;
+        /* La tabla se convierte en vertical */
+    }
+
+    .tabla th,
+    .tabla td {
+        width: 100%;
+        /* Cada celda ocupa todo el ancho */
+    }
+}

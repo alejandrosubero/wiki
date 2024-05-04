@@ -1,5 +1,6 @@
 package com.api.wiki.entitys;
 
+import com.api.wiki.dto.ClassDocumentDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +34,6 @@ public class Task {
     private String personWorked;
     private String taskReferenceNumber;
 
-
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "task_id_note")
     private @Builder.Default List<TaskNote> taskNote = new ArrayList<>();
@@ -45,6 +45,10 @@ public class Task {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "id_task_paquete")
     private @Builder.Default List<PaquetePackage> packages = new ArrayList<>();
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "id_task_class_document")
+    private @Builder.Default List<ClassDocument> classDocumentsList = new ArrayList<>();
 
     @Column(name = "project_id_ref")
     private Long idProject;

@@ -43,4 +43,8 @@ public class SubTask {
     @JoinColumn(name = "id_sub_task")
     private @Builder.Default List<PaquetePackage> packages = new ArrayList<>();
 
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "id_sub_task_class_document")
+    private @Builder.Default List<ClassDocument> classDocumentsList = new ArrayList<>();
+
 }

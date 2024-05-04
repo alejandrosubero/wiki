@@ -1,1 +1,207 @@
 <p>project works!</p>
+
+    <div class="container">
+
+        <div class="navBar">
+            <div class="title">
+                <h1>Project # id: 01</h1>
+            </div>
+            <div class="buttons">
+                <button class="button button-cancel">x</button>
+                <button class="button button-add buttons_m">+</button>
+                <button class="button button-add buttons_m">Edid</button>
+            </div>
+        </div>
+
+        <div class="campos-Container">
+            <div class="camp">
+                <div class="campo">
+                    <label for="projectname">Name:</label>
+                    <!-- <input type="text" id="projectname" name="projectname" required> -->
+                    <p id="projectname" class="box3d">My Proyect</p>
+                </div>
+
+                <div class="campo">
+                    <label for="hours">Hours:</label>
+                    <!-- <input type="text" id="hours" name="hours" required> -->
+                    <p id="hours" class="box3d">15</p>
+                    <label for="hours"> hs</label>
+                </div>
+
+                <div class="campo">
+                    <label for="startdate">Start Date:</label>
+                    <!-- <input type="date" id="startdate" name="startdate" required> -->
+                    <p id="startdate" class="box3d">25/01/2024</p>
+                </div>
+
+                <div class="campo">
+                    <label for="addwiki">Add Wiki:</label>
+                    <!-- <input type="date" id="addwiki" name="addwiki" required> -->
+                    <p id="startdate" class="box3d">25/01/2024</p>
+                </div>
+
+
+                <div class="campo">
+                    <h3 class="">Repository:</h3>
+                    <div>
+                    </div>
+                </div>
+
+                <!-- <div class="campo">
+                    <label for="repository">Repository:</label>
+                    <input type="text" id="repository" name="repository">
+                    <div class="buttons buttons_m">
+                        <button class="button button-add">+</button>
+                    </div>
+                </div> -->
+
+                <div class="campo">
+                    <label for="repository">Repository:</label>
+                    <select name="repository" id="repository" class="box3d custom-select">
+                        <option value="apple">https://github.com/alejandrosubero/wiki/tree/developer</option>
+                        <option value="banana">https://github.com/alejandrosubero/wiki/tree/main</option>
+                        <option value="orange">https://github.com/alejandrosubero/wiki/</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="camp">
+                <div class="campo">
+                    <h2 class="title-head">Statistics:</h2>
+                </div>
+
+                <div class="campo">
+                    <label for="tasks">Tasks:</label>
+                    <!-- <input type="text" id="tasks" name="tasks" required> -->
+                    <p id="tasks" class="box3d">2</p>
+                </div>
+
+                <div class="campo">
+                    <label for="error">Error:</label>
+                    <!-- <input type="text" id="error" name="error" required> -->
+                    <p id="error" class="box3d">1</p>
+                </div>
+
+                <div class="campo">
+                    <label for="fixtures">Fixtures:</label>
+                    <!-- <input type="text" id="fixtures" name="fixtures" required> -->
+                    <p id="fixtures" class="box3d">0</p>
+                </div>
+
+                <div class="campo">
+                    <h2 class="title-head">Open Event:</h2>
+                </div>
+
+                <div class="campo">
+                    <label for="openTask">Tasks:</label>
+                    <p id="openTask" class="box3d">Tasks</p>
+                </div>
+
+                <div class="campo">
+                    <label for="openErrors">Error:</label>
+                    <p id="openErrors" class="box3d">Errors</p>
+                </div>
+
+                <div class="campo">
+                    <label for="openFixtures">Fixtures:</label>
+                    <p id="openFixtures" class="box3d">Fixtures</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="campos">
+            <div class="campos-label">
+                <label for="descripcion">Description:</label>
+            </div>
+            <div class="campo">
+                <textarea placeholder="Description" id="descripcion" name="descripcion"></textarea>
+            </div>
+        </div>
+
+<div class="tabla-Container ">
+    <div class="natablet">
+        <div class="head">
+            <h1>Tasks: </h1>
+        </div>
+        <div class="buttons">
+            <button class="button button-add-version">+</button>
+        </div>
+    </div>
+    <table class="tabla">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Status</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Documento 1</td>
+                <td>close</td>
+                <td>Task</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Documento 2</td>
+                <td>open</td>
+                <td>Error</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Documento 3</td>
+                <td>close</td>
+                <td>Fixtures</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<br>
+<div class="tabla-Container ">
+        <div class="natablet">
+            <div class="head">
+                <h1>Versions: </h1>
+            </div>
+            <div class="buttons">
+                <button class="button button-add-version">+</button>
+            </div>
+        </div>
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Versión</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Documento 1</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Documento 2</td>
+                    <td>2.0</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Documento 3</td>
+                    <td>3.0</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+
+    </div>
+
+

@@ -22,7 +22,7 @@
             background-color: #fff;
             border-radius: 10px;
             background: linear-gradient(225deg, #d4d4d4, hwb(0 98% 2%));
-            box-shadow: -9px 9px 16px #b3b3b3,9px -9px 16px #ffffff;
+            box-shadow: -9px 9px 16px #b3b3b3, 9px -9px 16px #ffffff;
         }
 
 
@@ -109,7 +109,9 @@
             align-items: center;
         }
 
-
+        .buttons_m {
+        margin-left: 10px;
+        }
 
         .campos {
             display: flex;
@@ -120,7 +122,7 @@
             padding: 20px 20px 0px 20px;
         }
 
-        .campos-label{
+        .campos-label {
             margin: 0px 0px 10px 0px;
         }
 
@@ -239,6 +241,19 @@
             font-weight: bold;
         }
 
+        .custom-select {
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+            overflow-y: auto;
+            max-height: 50px;
+            /* padding: 10px; */
+            /* // border: 1px solid #ccc; */
+            /* Habilita el scroll vertical */
+            /* Establece la altura máxima antes de mostrar el scroll */
+        }
+
+
         /* Responsive design */
         @media (max-width: 768px) {
             .tabla {
@@ -267,20 +282,15 @@
             </div>
             <div class="buttons">
                 <button class="button button-cancel">x</button>
-                <button class="button button-add">+</button>
+                <button class="button button-add buttons_m">+</button>
             </div>
         </div>
 
         <div class="campos-Container">
             <div class="camp">
                 <div class="campo">
-                    <label for="projectname">Name Project:</label>
+                    <label for="projectname">Project:</label>
                     <input type="text" id="projectname" name="projectname" required>
-                </div>
-
-                <div class="campo">
-                    <label for="repository">Repository:</label>
-                    <input type="text" id="repository" name="repository" required>
                 </div>
 
                 <div class="campo">
@@ -290,12 +300,36 @@
 
                 <div class="campo">
                     <label for="startdate">Start Date:</label>
-                    <input type="text" id="startdate" name="startdate" required>
+                    <input type="date" id="startdate" name="startdate" required>
                 </div>
 
                 <div class="campo">
                     <label for="addwiki">Add Wiki:</label>
-                    <input type="text" id="addwiki" name="addwiki" required>
+                    <input type="date" id="addwiki" name="addwiki" required>
+                </div>
+
+
+                <div class="campo">
+                    <h3 class="">Repository:</h3>
+                    <div>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="repository">Repository:</label>
+                    <input type="text" id="repository" name="repository">
+                    <div class="buttons buttons_m">
+                        <button class="button button-add">+</button>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="repository">Repository:</label>
+                    <select name="repository" id="repository" class="box3d custom-select">
+                        <option value="apple">https://github.com/alejandrosubero/wiki/tree/developer</option>
+                        <option value="banana">https://github.com/alejandrosubero/wiki/tree/main</option>
+                        <option value="orange">https://github.com/alejandrosubero/wiki/</option>
+                    </select>
                 </div>
             </div>
 

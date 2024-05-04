@@ -5,6 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CoreService } from '../../services/core.service';
 
 
 interface AutoCompleteCompleteEvent {
@@ -22,6 +23,7 @@ interface AutoCompleteCompleteEvent {
 })
 export class DashboarComponent implements OnInit {
   projectsService: ProjectsService = inject(ProjectsService);
+  coreService:CoreService = inject(CoreService);
   projectList = new Array<Project>();
   error: any;
   selectedOption = new Project();
@@ -40,10 +42,11 @@ export class DashboarComponent implements OnInit {
   onSelectChange(event: string){
     let prod  = this.projectList.find(project => project.name === event);
     console.log('prod',prod);
+    this.coreService.navigateToRoute('project');
   }
 
 
   onCreateNewProject(){
-    // do 
+    this.coreService.navigateToRoute('add_project');
   }
 }

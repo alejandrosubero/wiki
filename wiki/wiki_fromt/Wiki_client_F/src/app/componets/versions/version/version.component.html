@@ -1,1 +1,71 @@
 <p>version works!</p>
+
+    <div class="container">
+
+        <div class="navBar">
+            <div class="title">
+                <h1>Version</h1>
+            </div>
+            <div class="buttons">
+                <button class="button button-cancel">x</button>
+                <button class="button button-add">+</button>
+            </div>
+        </div>
+
+        <div class="campos">
+            <div class="campo">
+                <label for="version">Versión:</label>
+                <input type="text" id="version" name="version" required>
+            </div>   
+        </div>
+
+        <div class="campos">
+            <div class="campos-label">
+                <label for="descripcion">Description:</label>
+            </div>
+            <div class="campo">
+                <textarea placeholder="Description" id="descripcion" name="descripcion"></textarea>
+            </div>
+        </div>
+       
+
+        <div class="navBar">
+            <div class="head">
+                <h1>Documents of version: </h1>
+            </div>
+        </div>
+
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Versión Actual</th>
+                    <th>Versión Inicial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Documento 1</td>
+                    <td>1.1</td>
+                    <td>1.0</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Documento 2</td>
+                    <td>2.1</td>
+                    <td>2.0</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Documento 3</td>
+                    <td>3.0</td>
+                    <td>2.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

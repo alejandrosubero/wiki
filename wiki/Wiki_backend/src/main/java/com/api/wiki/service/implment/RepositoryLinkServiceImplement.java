@@ -2,6 +2,7 @@ package com.api.wiki.service.implment;
 
 import com.api.wiki.dto.RepositoryLinkDTO;
 import com.api.wiki.entitys.RepositoryLink;
+import com.api.wiki.mapper.RepositoryLinkMapper;
 import com.api.wiki.repository.RepositoryLinkRepository;
 import com.api.wiki.service.RepositoryLinkService;
 import org.springframework.dao.DataAccessException;
@@ -13,7 +14,7 @@ import java.util.Optional;
 public class RepositoryLinkServiceImplement implements RepositoryLinkService {
 
     private RepositoryLinkRepository repository;
-    private  RepositoryLinkMapper mapper;
+    private RepositoryLinkMapper mapper;
 
     public RepositoryLinkServiceImplement(RepositoryLinkRepository repository, RepositoryLinkMapper mapper) {
         this.repository = repository;
