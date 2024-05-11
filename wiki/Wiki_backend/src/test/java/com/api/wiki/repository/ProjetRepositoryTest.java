@@ -96,7 +96,7 @@ public class ProjetRepositoryTest {
                     .build();
 
 
-            return Project.builder()
+            Project pro = Project.builder()
                     .idProject(1l)
                     .name("test proyect")
                     .repositoryLink("http:test./repository.com")
@@ -106,6 +106,8 @@ public class ProjetRepositoryTest {
                     .versionControlList(List.of(versionControl))
                     .taskList(List.of(task))
                     .build();
+            return pro;
+
         }
 
         @Test
